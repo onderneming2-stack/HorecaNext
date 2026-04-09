@@ -34,7 +34,7 @@ export default function Hero() {
           </p>
 
           <p className="text-white/55 text-[15px] leading-[1.8] mb-5 sm:mb-4 max-w-[430px]">
-            Goede mensen aan goede werkgevers. Kort en direct.
+            Wij matchen horeca talent met werkgevers waar je écht verder komt.
           </p>
 
           <p className="text-[11.5px] text-muted/55 mb-12 sm:mb-10 flex flex-wrap items-center gap-x-3 gap-y-1">
