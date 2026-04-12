@@ -1,19 +1,23 @@
 const items = [
   {
-    label: "Direct in dienst",
-    body: "Geen uitzendbureau, geen tussenstap. Je gaat direct bij de werkgever in dienst.",
+    label: '48 uur naar shortlist',
+    body: 'Onze AI-pipeline doorloopt sourcing, outreach en screening volledig automatisch. Jij ontvangt een kant-en-klare shortlist — binnen 48 uur na opdracht.',
+    aiTag: 'AI-powered',
   },
   {
-    label: "Persoonlijk contact",
-    body: "Geen formulieren of wachtrijen. We leren je kennen en kijken wat past.",
+    label: 'Persoonlijk contact',
+    body: 'Geen formulieren, geen wachtrijen. Je spreekt altijd direct met ons. We leren je kennen en kijken wat bij jou en je team past.',
+    aiTag: null,
   },
   {
-    label: "Snel schakelen",
-    body: "We reageren snel en gaan direct aan de slag. Geen weken wachten.",
+    label: 'Pre-gescreende kandidaten',
+    body: 'Elk profiel scoort op ervaring, locatie, motivatie en beschikbaarheid. Geen ruis — alleen relevant talent dat klaar is om te starten.',
+    aiTag: 'Scoringmodel',
   },
   {
-    label: "Gericht op groei",
-    body: "Of je nu wil doorgroeien of gewoon een betere plek zoekt. We denken met je mee.",
+    label: 'Gericht op groei',
+    body: 'We denken in groeipaden. Of je nu een kok zoekt die doorgroeit naar souschef of een bedieningskracht die teamlead wil worden.',
+    aiTag: null,
   },
 ];
 
@@ -28,9 +32,9 @@ export default function WhyUs() {
             Waarom HorecaNext?
           </h2>
           <p className="text-muted/65 text-[14px] leading-relaxed max-w-lg">
-            Geen cv-schuiven. Geen lange procedures.
+            Geen uitzendbureaus. Geen lange procedures.{' '}
             <br />
-            Gewoon een team dat de horeca kent.
+            Gewoon een team dat de horeca kent — aangedreven door AI.
           </p>
         </div>
 
@@ -51,11 +55,17 @@ export default function WhyUs() {
                   <p className="text-muted/60 text-[13px] leading-relaxed">
                     {item.body}
                   </p>
+                  {item.aiTag && (
+                    <span className="inline-block mt-3 text-[10px] font-semibold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300">
+                      {item.aiTag}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
