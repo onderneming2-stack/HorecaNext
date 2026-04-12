@@ -5,6 +5,7 @@ import Steps from "@/components/Steps";
 import VacaturesPreview from "@/components/VacaturesPreview";
 import Employers from "@/components/Employers";
 import ContactForm from "@/components/ContactForm";
+import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -23,6 +24,8 @@ export default function Home() {
         <hr className="section-divider" />
         <Employers />
         <hr className="section-divider" />
+        <hr className="section-divider" />
+        <Pricing />
         <ContactForm />
       </main>
       <Footer />
